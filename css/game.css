@@ -1,0 +1,62 @@
+/*בו ממוקם המשחק div-עיצוב ה*/
+#table{
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    border-style: solid;
+    border-radius:3%;
+    border-color:rgba(18, 56, 79, 0.867);
+    border-width: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    font-size: 1500%;
+    background-color: rgba(63, 86, 104, 0.827);
+    position: fixed;
+    top: 60px;
+    right: -840px;
+    transition: right 1.8s ease-in-out;
+}
+
+/*עיצוב התמונות*/
+.pic, .empty{
+    height: 70px;
+    width: 70px;
+    /* background-color:none; */
+    border-style: solid;
+    border-color:  rgba(18, 56, 79, 0.867);
+    border-width: 0.01px;
+    margin: auto;
+    transition: width 0.8s ease-in-out, height 0.8s ease-in-out, marginRight 0.8s linear, marginLeft 0.8s ease-in-out;
+}
+
+#adding{
+    font-size: 800%;
+    top: 10%;
+    right: 25%;
+    transition: color 2.0s ease-in-out, width 0.8s ease-in-out, height 0.8s ease-in-out, top 2.0s ease-in-out;
+}
+#popApp{
+    text-align: center;
+    border-style: solid;
+    border-radius:40px;
+    border-color:rgb(120, 43, 82);
+    border-width: 10px;
+    background-color: rgba(126, 70, 98, 0.724);
+    position: fixed;
+    width: 1140px;
+    height: 120px;
+    top: -130px;
+    right: 150px;
+    transition: top 1.8s ease-in-out;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-style: inherit;
+    font-size:larger;
+}
+
+#startGame{
+    margin-top: 8px;
+}

@@ -1,0 +1,127 @@
+
+/*שמכיל בתוכו את כל חלקי המפה div-ה*/
+#popUpMap{ 
+    position: fixed;
+    right: -1420px;
+    transition: right 2.8s ease-in-out;
+    width: 1415px;
+    height: 715px;
+    top: 35px;
+    z-index: 50;
+}
+
+/*הכפתור של השיאים*/
+#si{
+    display: none;
+    position: fixed;
+    z-index: 190;
+    margin-top: 0%;
+    left: 330px;
+    bottom: 100px;
+    height: 40px;
+}
+
+/*לוח השיאים*/
+#popUp{
+    display: none;
+    right: 300px;
+    z-index: 10;
+    direction: ltr;
+    transition: right 0.8s ease-in-out;
+    top: 75px
+}
+
+/*התמונה של המפה*/
+#mapPic{
+    width: 80%;
+    border-color: black;
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 30px;
+}
+
+/*סימון השלבים*/
+.stage{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+}
+
+/*הגדרת מיקום לכל סימון*/
+#s181{
+    top: 150px;
+    right: 1100px;
+}
+
+#s182{
+    top: 100px;
+    right: 850px;
+}
+
+#s183{
+    top: 180px;
+    right: 670px;
+}
+
+#s184{
+    top: 300px;
+    right: 830px;
+}
+
+#s185{
+    top: 475px;
+    right: 820px;
+}
+
+#s186{
+    top: 475px;
+    right: 310px;
+}
+
+#s187{
+    top: 300px;
+    right: 230px;
+}
+
+#s188{
+    top: 140px;
+    right: 330px;
+}
+
+.btnMy{
+    text-align: center;
+    border-style: solid;
+    border-radius:50px;
+    border-color: rgba(67, 34, 49, 0.838);
+    border-width: 5px;
+    background-color: rgb(221, 194, 208);
+    width: 220px;
+    height: 70px;
+    margin-top: 30px;
+    color: rgba(67, 34, 49, 0.838);
+    font-size: x-large;
+    box-shadow:  4px 5px black, 0 0 15px rgba(255, 255, 255, 0.838), 0 0 6px rgba(56, 27, 40, 0.838);
+    font-style: initial;
+}
+
+
+#hearts{
+    position: fixed;
+    top: 250px;
+    left: 15px;
+    display: grid;
+    /* display: none; */
+    width: min-content;
+    height: min-content;
+    grid-template-rows: repeat(5, 20px);
+    grid-template-columns: 100%;
+    row-gap: 2px;
+    z-index: 1000;
+    padding: 4px;
+    border-width: 2px;
+}
+
+.heart{
+    width: 20px;
+    transition: transform 1s linear;
+}

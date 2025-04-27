@@ -1,0 +1,124 @@
+/*הגדרות כלליות*/
+body{
+    direction: rtl;
+    margin: 0px;
+}
+
+/*פריסה כללית של המשחק*/
+#game
+{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 92% 8%;
+}
+
+/*פריסת החלק הצדדי - 0 כדי שיהיה אחד מעל השני*/
+side{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 0% 0%;
+}
+
+/*עיצוב התמונה של הסוכריה המלאה*/
+#sideFill{
+    width: 121px;
+}
+
+/*עיצוב האובייקט שיכיל את התמונה של הסוכריה הריקה*/
+#side{
+    z-index: 100;
+    width: 121px;
+    height: 440px; /*ערך התחלתי*/
+    background-image: url("../picture/side.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: height 0.8s ease-in-out;
+}
+
+.cover{
+    position: fixed;
+    z-index: 200;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#playAudio, #pauseAudio, #off{
+    width: 32px;
+    height: 32px;
+    bottom: 11px;
+    background: none;
+    border:none;
+    border-radius: 50px;
+}
+
+#playAudio{
+    left: 88px;
+}
+
+#pauseAudio{
+    left: 48px;
+}
+
+/*התאמה של כל אובייקט למקומו הייעודי לו*/
+#level{
+    bottom: 90px;
+    left: 45px;
+    font-size: xx-large;
+}
+
+#off{
+    left: 8px;
+}
+
+#score{
+    top: 93px;
+    left: 50px;
+}
+
+#timer, #scoreText{
+    top: 25px;
+    left: 33px;
+    font-size: x-large;
+}
+
+article{
+    background-image: url("../picture/store.jpg");
+    background-size: 102.5%;
+    display: grid;
+    grid-template-rows: 2% max-content;
+}
+
+.btn{
+    text-align: center;
+    border-style: solid;
+    border-radius:50px;
+    border-color: rgba(67, 34, 49, 0.838);
+    border-width: 5px;
+    background-color: rgb(221, 194, 208);
+    width: 220px;
+    height: 70px;
+    margin-top: 30px;
+    color: rgba(67, 34, 49, 0.838);
+    font-size: x-large;
+    box-shadow:  1px 2px black, 0 0 5px rgba(184, 93, 134, 0.838), 0 0 2px rgba(56, 27, 40, 0.838);
+    font-style: initial;
+    transition: transform 0.2s ease-in-out;
+}
+
+#popUp{
+    text-align: center;
+    border-style: solid;
+    border-radius:3%;
+    border-color:rgb(120, 43, 82);
+    border-width: 10px;
+    background-color: rgba(126, 70, 98, 0.724);
+    position: fixed;
+    width: 840px;
+    height: 560px;
+    top: 100px;
+    transition: right 1.8s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between; 
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../picture/OIP (36).jpg">
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <title>candy crash</title>
+</head>
+<body id="bodyGame">
+    <div id="game">
+    <article>
+        <div id="table"></div>
+        <p id="adding" class="cover"></p>
+        <div id="popApp">
+        <lable id="expline"></lable>
+        <input type="button" id="startGame" value="play" class="btn">
+        </div>
+    </article>
+    <side>
+        <div id="side"></div>
+        <img src="../picture/side fill.png" id="sideFill">
+        <p id="level" class="cover"> 1 </p>
+        <p id="score" class="cover"> 0 </p>
+        <p id="timer" class="cover"> 12:23 </p>
+        <input type="button" id="playAudio" class="cover">
+        <input type="button" id="pauseAudio" class="cover">
+        <input type="button" id="off" class="cover">
+    </side>
+    <audio id="backgroundSound" src="../audio/backgroundSound.mp3" loop></audio>
+    <audio id="boomSound" src="../audio/boom.wav"></audio>
+    <audio id="lineBoom" src="../audio/lineBoom.mp3"></audio>
+    <audio id="sugarCrash" src="../audio/sugarCrash.mp3"></audio>
+</div>
+    <script src="../js/general.js"></script>
+    <script src="../js/game.js"></script>
+</body>
+</html>
