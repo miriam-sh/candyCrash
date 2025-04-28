@@ -4,7 +4,3 @@ services:
     name: candyCrash
     env: static
     staticPublishPath: html
-    port:8080
-    routes:
-      - src: /(.+)
-        dest: \$1
